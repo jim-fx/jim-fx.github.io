@@ -4,9 +4,133 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Max dem sein Portfolio</title>
+    <title>Max | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        font-family: "Fira Code", monospace;
+      }
+      main {
+        max-width: 800px;
+        margin: 0 auto;
+        margin-top: 20vh;
+      }
+      section {
+        min-height: 50vh;
+        outline: solid thin black;
+        margin-bottom: 20vh;
+      }
+
+      h3 {
+        font-size: 1.5em;
+        margin: 10px 0;
+        font-weight: 100;
+      }
+
+      .image {
+        background: gray;
+      }
+
+      .slider {
+        display: grid;
+        grid-template-rows: min-content 1fr 50px;
+      }
+
+      .slider > .top {
+        border-bottom: solid 1px black;
+        padding-left: 15px;
+      }
+
+      .slider > .bottom {
+        border-top: solid 1px black;
+      }
+
+      .hi {
+        display: grid;
+        grid-template-columns: 1.4fr 0.6fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 0px 0px;
+        grid-template-areas:
+          "image top top"
+          "image bottom bottom";
+      }
+      .hi > .image {
+        grid-area: image;
+      }
+      .hi > .bottom {
+        grid-area: bottom;
+        padding: 20px;
+      }
+      .hi > .top {
+        grid-area: top;
+        padding: 20px;
+      }
+    </style>
   </head>
   <body>
-    <h1>Max sein Portfolio</h1>
+    <main>
+      <section class="hi">
+        <div class="image">
+          <img />
+        </div>
+        <div class="top">
+          <h2>Hi :)</h2>
+          <h3>Ich bin Max</h3>
+        </div>
+        <div class="bottom">
+          <a href="#about">About Me</a>
+          <a href="#dev">Entwickler</a>
+          <a href="#foto">Fotograf</a>
+          <a href="#3d">3D Nerd</a>
+          <a href="#3d">Resume</a>
+          <a href="#3d">Twitter</a>
+          <a href="#3d">Github</a>
+        </div>
+      </section>
+
+      <section class="slider" id="about">
+        <div class="top">
+          <h3>↘ About Me</h3>
+        </div>
+        <div class="middle"></div>
+        <div class="bottom"></div>
+      </section>
+
+      <section class="slider" id="dev">
+        <div class="top">
+          <h3>↘ Entwickler</h3>
+        </div>
+        <div class="middle"></div>
+        <div class="bottom"></div>
+      </section>
+      <section class="slider" id="photo">
+        <div class="top">
+          <h3>↘ Fotograf</h3>
+        </div>
+        <div class="middle"></div>
+        <div class="bottom"></div>
+      </section>
+
+      <section class="slider" id="3d">
+        <div class="top">
+          <h3>↘ 3D Nerd</h3>
+        </div>
+        <div class="middle"></div>
+        <div class="bottom"></div>
+      </section>
+
+      <section class="slider" id="resume">
+        <div class="top">
+          <h3>↘ Resume</h3>
+        </div>
+        <div class="middle"></div>
+        <div class="bottom"></div>
+      </section>
+    </main>
   </body>
 </html>
